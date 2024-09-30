@@ -10,10 +10,10 @@ body {
 }
 
 .curtain {
+    z-index: 1;
     width: 100%;
     position: fixed;
     bottom: 0;
-    z-index: 1;
     transition: transform 0.2s;
 }
 
@@ -22,18 +22,21 @@ body {
     height: auto;
 }
 
-.curtain {
-    width: 100%;
-    margin: 0 auto;
-    top: 10%;
+.lamp {
     z-index: 0;
+    width: 100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
 }
 
-.curtain img {
+.lamp img {
+    background-color: black;
     width: 100%;
     height: auto;
 }
-
 
 .curtain.open {
     transition: transform 1s;
