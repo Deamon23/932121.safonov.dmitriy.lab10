@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.curtain {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    transition: transform 0.2s;
+}
+
+.curtain img {
+    width: 100%;
+    height: auto;
+}
+
+.curtain {
+    width: 100%;
+    margin: 0 auto;
+    top: 10%;
+    z-index: 0;
+}
+
+.curtain img {
+    width: 100%;
+    height: auto;
+}
+
+
+.curtain.open {
+    transition: transform 1s;
+    transform: translateY(-100%);
+}
+
+.curtain.lift {
+    transform: translateY(-5%);
+}
