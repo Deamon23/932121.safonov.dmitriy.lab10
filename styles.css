@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 body {
     margin: 0;
@@ -23,13 +22,8 @@ body {
 }
 
 .lamp {
-    z-index: 0;
-    width: 100px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    top: 50%;
+    width: 250px;
+    margin: 0 auto;
 }
 
 .lamp img {
@@ -45,4 +39,41 @@ body {
 
 .curtain.lift {
     transform: translateY(-5%);
+    transition: transform 0.2s;
+}
+
+.light {
+    height: 0;
+	width: 50px;
+    border-left: 300px solid transparent; 
+    border-right: 300px solid transparent; 
+    border-bottom: 600px solid rgba(255, 255, 0, 0.5); 
+    top: 71px;
+    position: absolute;
+    left: calc(50% - 324px);
+    display: none;
+}
+
+.wizard{
+    position: absolute;
+    display: none;
+}
+
+.Hat{
+    position: absolute;
+    display: none;
+}
+
+.Birb{
+    position: absolute;
+    display: none;
+}
+
+.Rabbit{
+    position: absolute;
+    display: none;
+}
+
+.on {
+    display: block; 
 }
