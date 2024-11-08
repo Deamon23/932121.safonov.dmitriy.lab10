@@ -23,7 +23,7 @@ body {
 }
 
 .lamp {
-    width: 250px;
+    width: 17vw;
     position: absolute;
     left: 50%;
     transform: translateX(-50%); 
@@ -48,11 +48,11 @@ body {
 .light {
     pointer-events: none;
     height: 0;
-	width: 50px;
+	width: 4vw;
     border-left: 50vh solid transparent; 
     border-right: 50vh solid transparent; 
     border-bottom: 40vw solid rgba(255, 255, 0, 0); 
-    top: 71px;
+    top: 10vh;
     position: absolute;
     left: 50%;
     transform: translateX(-50%); 
